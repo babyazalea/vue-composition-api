@@ -5,12 +5,23 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
-  data() {
-    return {
-      userName: 'Maximilian',
-    };
-  },
+  setup() {
+    const uName = ref('babyazalea');
+
+    setTimeout(function() {
+      uName.value = 'ty';
+    }, 2000);
+
+    return { userName: uName };
+  }
+  // data() {
+  //   return {
+  //     userName: 'babyazalea',
+  //   };
+  // },
 };
 </script>
 
