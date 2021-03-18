@@ -1,10 +1,11 @@
 <template>
   <section class="container">
     <user-data
+      class="test"
       :first-name="firstName"
       :last-name="lastName"
       :age="age"
-    ></user-data>
+    />
     <button @click="setAge">Change Age</button>
     <div>
       <input type="text" placeholder="First name" v-model="firstName" />
